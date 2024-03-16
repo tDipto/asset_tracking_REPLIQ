@@ -7,6 +7,6 @@ urlpatterns = [
     
     path("api/v1/companies/", include("Company.urls")),
     path("api/v1/devices/", include("Device.urls")),
-    path("api/v1/employees", include("Employee.urls")),
-    # path("api/v1/tracking", include("Tracking.urls")),
+    path("api/v1/employees/", include("Employee.urls")),
+    path("api/v1/tracking/", include("Tracking.urls")),
 ]
