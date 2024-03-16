@@ -11,7 +11,7 @@ class Tracking(models.Model):
     returned_at = models.DateTimeField(blank=True,null=True)
 
     condition_checkout = models.TextField()
-    condition_returned = models.TextField()
+    condition_returned = models.TextField(blank=True,null=True)
 
     total_number = models.IntegerField(default=1,validators=[MinValueValidator(1)])
 
